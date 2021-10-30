@@ -1,12 +1,15 @@
 import "./App.css";
 import { SocketContext, socket } from "./context/Socket";
 import Ticker from "./components/Ticker";
+import Header from "./components/Header";
 
 function App() {
   return (
     <SocketContext.Provider value={socket}>
-      <h3 className="text-center">Kryptomania</h3>
       <div className="body">
+        <div className="header-container">
+          <Header />
+        </div>
         <Ticker />
       </div>
     </SocketContext.Provider>

@@ -1,0 +1,15 @@
+[
+    {
+        "header":"Ideal for new investors",
+        "displayTickerArray": ["BTCINR","ETHINR","BNBINR", "XRPINR"]
+    },
+    {
+        "header":"Trending Coins",
+        "displayTickerArray": ["DOGEINR","VETINR","ADAINR", "XTZINR"]
+    },
+    {
+        "header":"Non-Trending Coins",
+        "displayTickerArray": ["XLMINR","TRXINR","DOTINR", "MKRINR"]
+    }
+]
+    
