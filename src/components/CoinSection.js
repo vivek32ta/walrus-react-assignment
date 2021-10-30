@@ -38,7 +38,7 @@ function CoinSection(props) {
                                                         <i className="bi bi-caret-down-fill"></i>
 
                                                     }
-                                                    &nbsp; {ticker.P}
+                                                    &nbsp; {ticker.P}%
                                                 </span>
                                             </div>
                                         </div>
