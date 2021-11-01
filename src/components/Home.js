@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 
 import { SocketContext } from "../context/Socket";
 import CoinSection from "./CoinSection";
+import Header from "./Header";
 
 import SectionList from "../data/sections-list.json";
 
-function Ticker() {
+function Home() {
   const socket = React.useContext(SocketContext);
 
   const [socketConnected, setSocketConnected] = useState(false);
@@ -32,7 +33,7 @@ function Ticker() {
       setTickerArrayData(unProcessedTickerArrayData);
       setIsLoading(false);
     }
-    
+
   };
 
 
@@ -78,16 +79,21 @@ function Ticker() {
         </div>
         :
         <>
-          {SectionList.map((section) =>
-          (<CoinSection
-            header={section.header}
-            displayTickerArray={tickerArrayData.filter((ticker) => section.displayTickerArray.includes(ticker.s))}
-          />)
-          )}
-          </>
+          <div className="body d-md-flex">
+            <div className="header-container container col-md-5">
+              <Header />
+            </div>
+            {SectionList.map((section) =>
+            (<CoinSection
+              header={section.header}
+              displayTickerArray={tickerArrayData.filter((ticker) => section.displayTickerArray.includes(ticker.s))}
+            />)
+            )}
+          </div>
+        </>
       }
     </>
   );
 }
 
-export default Ticker;
+export default Home;

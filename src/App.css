@@ -116,6 +116,25 @@ body {
 .ticker-container .ticker-cop.down{
   color: #FF5454;
 }
+.loader{
+  margin-top:20%;
+}
+.header-cta-button:hover{
+  cursor: pointer;
+}
+.modal{
+  color: #ffffff;
+}
+.modal-content{
+  border: 1px solid #7f28c4;
+  background: #0f0f0f;
+}
+.modal-header{
+  border-bottom: 1px solid #7f28c4;
+}
+.modal-footer{
+  border-top: 1px solid #7f28c4;
+}
 
 @media (min-width:801px){
   .body{
