@@ -4,14 +4,14 @@ import tickerNames from '../data/ticker-names.json';
 function CoinSection(props) {
     return (
         <>
-            <div className="container coin-section-container">
+            <div className="container coin-section-container col-md-6">
                 <div className="coin-section-header">
                     {props.header}
                 </div>
                 <div className="container coin-array-container">
                     {props.displayTickerArray.map((ticker) => {
                         return (
-                            <div className="col-md-5">
+                            <div className="col-md-10">
                                 <div className="card ticker-container">
                                     <div className="row">
                                         <span className="ticker-logo col-2">

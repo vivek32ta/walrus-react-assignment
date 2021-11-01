@@ -4,7 +4,7 @@ function Header() {
 
 
     return (
-        <div className="container">
+        <div className="container col-md-10">
             <div className="row">
                 <div className="header-greeting col-sm-4">Hi John,</div>
             </div>

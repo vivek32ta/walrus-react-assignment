@@ -6,8 +6,8 @@ import Header from "./components/Header";
 function App() {
   return (
     <SocketContext.Provider value={socket}>
-      <div className="body">
-        <div className="header-container">
+      <div className="body d-md-flex">
+        <div className="header-container container col-md-5">
           <Header />
         </div>
         <Ticker />

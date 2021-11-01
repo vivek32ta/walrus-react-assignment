@@ -15,6 +15,9 @@ body {
   padding-bottom: 20%;
   background: linear-gradient(180deg, #7f28c4 0%, rgba(40, 65, 196, 0) 100%);
 }
+.d-md-flex{
+  flex-flow: row wrap;
+}
 
 .header-greeting {
   margin-bottom: 10%;
@@ -115,6 +118,13 @@ body {
 }
 
 @media (min-width:801px){
+  .body{
+    background: linear-gradient(180deg, #7f28c4 0%, rgba(40, 65, 196, 0) 40%);
+  }
+
+  .header-container{
+    background: none;
+  }
   
   .header-container {
     padding-top: 5%;
@@ -123,18 +133,24 @@ body {
   }
   
   .header-greeting {
-    margin-bottom: 4%;
+    margin-bottom: 15%;
   }
   .header-body .header-body-top {
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
   .header-body .header-body-bottom {
-    margin-bottom: 4%;
+    margin-bottom: 15%;
   }
   .coin-section-container{
     padding-bottom: 4%;
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .coin-section-header {
     padding-bottom: 2%;
+  }
+  .card{
+    border: none;
   }
 }

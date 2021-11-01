@@ -77,15 +77,14 @@ function Ticker() {
           </div>
         </div>
         :
-        <div className="container body-container">
+        <>
           {SectionList.map((section) =>
           (<CoinSection
             header={section.header}
             displayTickerArray={tickerArrayData.filter((ticker) => section.displayTickerArray.includes(ticker.s))}
           />)
           )}
-
-        </div>
+          </>
       }
     </>
   );
